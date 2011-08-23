@@ -37,6 +37,10 @@ nmap <silent> <leader>pt :%! perltidy<CR>
 nmap <silent> <leader>ptv :'<,'>! perltidy<CR>
 nmap <silent> <leader>c :! perl -MVi::QuickFix -c %<CR>
 
+if exists('g:loaded_ack')
+    nnoremap <leader>a :Ack
+endif
+
 " don't gripe on unsaved buffers
 set hidden
 
@@ -98,10 +102,14 @@ function! <SID>SynStack()
     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
+set nocompatible
 set directory=/tmp
 set backspace=indent,eol,start
-set nohlsearch
+" set nohlsearch
+nnoremap <leader><space> :nohl<CR>
 set incsearch
+set ignorecase
+set smartcase
 set expandtab
 set smarttab
 set autoindent
@@ -111,7 +119,11 @@ set sw=4
 set ts=4
 set pastetoggle=<F2>
 set history=1000
-set undolevel=1000
+set undolevels=1000
+
+nnoremap <tab> %
+vnoremap <tab> %
+inoremap jj <ESC>
 
 let perl_include_POD = 1
 let perl_want_scope_in_variables = 1

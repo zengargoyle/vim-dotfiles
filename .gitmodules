@@ -25,3 +25,18 @@
 [submodule "available-bundles/tagbar"]
 	path = available-bundles/tagbar
 	url = http://github.com/majutsushi/tagbar
+[submodule "available-bundles/nerdtree"]
+	path = available-bundles/nerdtree
+	url = http://github.com/scrooloose/nerdtree
+[submodule "available-bundles/ack"]
+	path = available-bundles/ack
+	url = http://github.com/mileszs/ack.vim
+[submodule "available-bundles/repeat"]
+	path = available-bundles/repeat
+	url = http://github.com/tpope/vim-repeat.git
+[submodule "available-bundles/sparkup"]
+	path = available-bundles/sparkup
+	url = http://github.com/rstacruz/sparkup.git
+[submodule "available-bundles/snipmate"]
+	path = available-bundles/snipmate
+	url = http://github.com/msanders/snipmate.vim.git
