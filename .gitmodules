@@ -7,3 +7,6 @@
 [submodule "available-bundles/unimpaired"]
 	path = available-bundles/unimpaired
 	url = http://github.com/tpope/vim-unimpaired
+[submodule "available-bundles/fugitive"]
+	path = available-bundles/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
