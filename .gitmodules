@@ -1,3 +1,9 @@
 [submodule "available-bundles/pathogen"]
 	path = available-bundles/pathogen
 	url = http://github.com/tpope/vim-pathogen.git
+[submodule "available-bundles/surround"]
+	path = available-bundles/surround
+	url = http://github.com/tpope/vim-surround
+[submodule "available-bundles/unimpaired"]
+	path = available-bundles/unimpaired
+	url = http://github.com/tpope/vim-unimpaired
