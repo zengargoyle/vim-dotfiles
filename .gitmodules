@@ -10,3 +10,18 @@
 [submodule "available-bundles/fugitive"]
 	path = available-bundles/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule "available-bundles/delimitMate"]
+	path = available-bundles/delimitMate
+	url = http://github.com/Raimondi/delimitMate.git
+[submodule "available-bundles/closetag"]
+	path = available-bundles/closetag
+	url = http://github.com/docunext/closetag.vim.git
+[submodule "available-bundles/nerdcommenter"]
+	path = available-bundles/nerdcommenter
+	url = http://github.com/scrooloose/nerdcommenter.git
+[submodule "available-bundles/supertab"]
+	path = available-bundles/supertab
+	url = http://github.com/ervandew/supertab.git
+[submodule "available-bundles/tagbar"]
+	path = available-bundles/tagbar
+	url = http://github.com/majutsushi/tagbar
