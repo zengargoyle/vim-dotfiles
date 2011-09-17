@@ -113,7 +113,7 @@ set smartcase
 set expandtab
 set smarttab
 set autoindent
-set copyindent
+"set copyindent
 set shiftround
 set sw=4
 set ts=4
