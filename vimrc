@@ -1,3 +1,6 @@
+
+let delimitMate_expand_cr=1
+
 " pathogen
 call pathogen#infect()
 syntax on
