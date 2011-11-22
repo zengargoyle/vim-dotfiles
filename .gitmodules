@@ -19,9 +19,6 @@
 [submodule "available-bundles/nerdcommenter"]
 	path = available-bundles/nerdcommenter
 	url = http://github.com/scrooloose/nerdcommenter.git
-[submodule "available-bundles/supertab"]
-	path = available-bundles/supertab
-	url = http://github.com/ervandew/supertab.git
 [submodule "available-bundles/tagbar"]
 	path = available-bundles/tagbar
 	url = http://github.com/majutsushi/tagbar
