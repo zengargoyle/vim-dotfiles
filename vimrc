@@ -3,6 +3,8 @@ let delimitMate_expand_cr=1
 
 " pathogen
 call pathogen#infect()
+
+set nocompatible
 syntax on
 filetype plugin indent on
 
@@ -27,7 +29,15 @@ let mapleader=","
 
 " toggle show invisible chars
 nmap <leader>l :set list!<CR>
-set listchars=tab:▸\ ,eol:¬  " ▸:U+25b8 ¬:U+00ac
+
+if has("multibyte")
+    if &encoding == 'utf-8')
+        set listchars=tab:▸\ ,eol:¬  " ▸:U+25b8 ¬:U+00ac
+    endif
+else
+    set listchars=tab:»\ ,eol:¬  " ▸:U+25b8 ¬:U+00ac
+endif
+
 highlight NonText ctermfg=cyan
 " highlight SpecialKey guifg=#RRGGBB
 

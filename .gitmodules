@@ -37,3 +37,6 @@
 [submodule "available-bundles/snipmate"]
 	path = available-bundles/snipmate
 	url = http://github.com/msanders/snipmate.vim.git
+[submodule "available-bundles/vim-perl"]
+	path = available-bundles/vim-perl
+	url = git://github.com/petdance/vim-perl.git
