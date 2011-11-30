@@ -30,16 +30,11 @@ let mapleader=","
 " toggle show invisible chars
 nmap <leader>l :set list!<CR>
 
-if &encoding == 'latin1'
-    set listchars=tab:~\ ,eol:$  " ▸:U+25b8 ¬:U+00ac
+if has("multi_byte")
+    set encoding=utf-8
+    set listchars=tab:▸\ ,eol:¬  " ▸:U+25b8 ¬:U+00ac
 else
-    if has("multi_byte")
-        if &encoding == 'utf-8'
-            set listchars=tab:▸\ ,eol:¬  " ▸:U+25b8 ¬:U+00ac
-        endif
-    else
-        set listchars=tab:»\ ,eol:¬  " ▸:U+25b8 ¬:U+00ac
-    endif
+    set listchars=tab:~\ ,eol:$  
 endif
 
 highlight NonText ctermfg=cyan
