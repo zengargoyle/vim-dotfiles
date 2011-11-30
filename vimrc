@@ -33,13 +33,8 @@ nmap <leader>l :set list!<CR>
 if &encoding == 'latin1'
     set listchars=tab:~\ ,eol:$  " ▸:U+25b8 ¬:U+00ac
 else
-<<<<<<< HEAD
     if has("multi_byte")
         if &encoding == 'utf-8'
-=======
-    if has("multibyte")
-        if &encoding == 'utf-8')
->>>>>>> 93f05eb75c18ba97c75e32f79ffe683a57afefe1
             set listchars=tab:▸\ ,eol:¬  " ▸:U+25b8 ¬:U+00ac
         endif
     else
