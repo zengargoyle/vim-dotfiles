@@ -143,4 +143,4 @@ let perl_extended_vars = 1
 let perl_fold = 1
 
 " http://www.slideshare.net/genehackdotorg/tweakers-anonymous
-autocmd BufWritePost *.pl !chmod +x %
+" autocmd BufWritePost *.pl !chmod +x %
