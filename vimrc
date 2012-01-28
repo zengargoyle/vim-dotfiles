@@ -141,3 +141,6 @@ let perl_include_POD = 1
 let perl_want_scope_in_variables = 1
 let perl_extended_vars = 1
 let perl_fold = 1
+
+" http://www.slideshare.net/genehackdotorg/tweakers-anonymous
+autocmd BufWritePost *.pl !chmod +x %
