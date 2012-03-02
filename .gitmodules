@@ -43,3 +43,6 @@
 [submodule "available-bundles/ctrlp.vim"]
 	path = available-bundles/ctrlp.vim
 	url = http://github.com/kien/ctrlp.vim.git
+[submodule "available-bundles/syntastic"]
+	path = available-bundles/syntastic
+	url = https://github.com/scrooloose/syntastic.git
