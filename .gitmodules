@@ -46,3 +46,6 @@
 [submodule "available-bundles/syntastic"]
 	path = available-bundles/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "available-bundles/vim-vividchalk"]
+	path = available-bundles/vim-vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
