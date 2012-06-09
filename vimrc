@@ -1,5 +1,7 @@
 
+let g:openssl_backup = 1
 let delimitMate_expand_cr=1
+let delimitMate_autoclose=0
 
 " pathogen
 call pathogen#infect()
@@ -135,7 +137,7 @@ set undolevels=1000
 
 nnoremap <tab> %
 vnoremap <tab> %
-inoremap jj <ESC>
+" inoremap jj <ESC>
 
 let perl_include_POD = 1
 let perl_want_scope_in_variables = 1
@@ -144,3 +146,10 @@ let perl_fold = 1
 
 " http://www.slideshare.net/genehackdotorg/tweakers-anonymous
 " autocmd BufWritePost *.pl !chmod +x %
+
+" digraphs from rjbs
+dig xx 9792 " female sign
+dig xy 9794 " male sign
+
+" die macro record from mst
+nnoremap q <NOP>
