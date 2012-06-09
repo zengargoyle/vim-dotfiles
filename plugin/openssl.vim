@@ -245,7 +245,7 @@ autocmd BufReadPost,FileReadPost   .auth.aes set foldmethod=expr
 autocmd BufReadPost,FileReadPost   .auth.aes set foldtext=getline(v:foldstart)
 autocmd BufReadPost,FileReadPost   .auth.aes nnoremap <silent><space> :exe 'silent! normal! za'.(foldlevel('.')?'':'l')<CR>
 autocmd BufReadPost,FileReadPost   .auth.aes nnoremap <silent>q :q<CR>
-autocmd BufReadPost,FileReadPost   .auth.aes highlight Folded ctermbg=red ctermfg=black
+" autocmd BufReadPost,FileReadPost   .auth.aes highlight Folded ctermbg=red ctermfg=black
 autocmd BufReadPost,FileReadPost   .auth.aes set updatetime=300000
 autocmd CursorHold                 .auth.aes quit
 
