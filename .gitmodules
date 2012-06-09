@@ -49,3 +49,6 @@
 [submodule "available-bundles/vim-vividchalk"]
 	path = available-bundles/vim-vividchalk
 	url = git://github.com/tpope/vim-vividchalk.git
+[submodule "available-bundles/mojo.vim"]
+	path = available-bundles/mojo.vim
+	url = https://github.com/yko/mojo.vim.git
