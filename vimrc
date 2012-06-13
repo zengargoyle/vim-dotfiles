@@ -153,3 +153,14 @@ dig xy 9794 " male sign
 
 " die macro record from mst
 nnoremap q <NOP>
+
+" http://vim.wikia.com/wiki/Setting_file_attributes_without_reloading_a_buffer
+function! SetExecutableBit()
+  let fname = expand("%:p")
+  checktime
+  execute "au FileChangedShell " . fname . " :echo"
+  silent !chmod a+x %
+  checktime
+  execute "au! FileChangedShell " . fname
+endfunction
+nmap <silent> <leader>X :call SetExecutableBit()<CR>
