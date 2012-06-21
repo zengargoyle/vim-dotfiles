@@ -164,3 +164,20 @@ function! SetExecutableBit()
   execute "au! FileChangedShell " . fname
 endfunction
 nmap <silent> <leader>X :call SetExecutableBit()<CR>
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+au ColorScheme * highlight ExtraWhitespace guibg=red
+au BufEnter * match ExtraWhitespace /\s\+$/
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhiteSpace /\s\+$/
+
+" http://stackoverflow.com/questions/356126
+" fun! <SID>StripTrailingWhitespaces()
+"     let l = line(".")
+"     let c = col(".")
+"     let s = @/
+"     %s/\s\+$//e
+"     let @/ = s
+"     call cursor(l, c)
+" endfun
+" autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
